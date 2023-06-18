@@ -2,63 +2,65 @@
 <testng-results ignored="0" total="4" passed="1" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-17T14:00:39 IST" name="Default suite" finished-at="2023-06-17T14:01:26 IST" duration-ms="47892">
+  <suite started-at="2023-06-18T10:59:03 IST" name="Suite" finished-at="2023-06-18T11:00:47 IST" duration-ms="103820">
     <groups>
     </groups>
-    <test started-at="2023-06-17T14:00:39 IST" name="Default test" finished-at="2023-06-17T14:01:26 IST" duration-ms="47892">
+    <test started-at="2023-06-18T10:59:03 IST" name="Test" finished-at="2023-06-18T11:00:47 IST" duration-ms="103820">
       <class name="com.test.TestRunner">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestRunner@2ed2d9cb]" started-at="2023-06-17T14:00:39 IST" name="setup" finished-at="2023-06-17T14:00:50 IST" duration-ms="11739" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestRunner@53ce1329]" started-at="2023-06-18T10:59:04 IST" name="setup" finished-at="2023-06-18T10:59:20 IST" duration-ms="16438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SelectProduct()[pri:0, instance:com.test.TestRunner@2ed2d9cb]" started-at="2023-06-17T14:00:50 IST" name="SelectProduct" finished-at="2023-06-17T14:01:06 IST" duration-ms="15242" status="PASS">
+        <test-method signature="SelectProduct()[pri:0, instance:com.test.TestRunner@53ce1329]" started-at="2023-06-18T10:59:20 IST" name="SelectProduct" finished-at="2023-06-18T10:59:31 IST" duration-ms="10896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectProduct -->
-        <test-method signature="orderAProduct()[pri:0, instance:com.test.TestRunner@2ed2d9cb]" started-at="2023-06-17T14:01:06 IST" name="orderAProduct" finished-at="2023-06-17T14:01:26 IST" depends-on-methods="com.test.TestRunner.SelectProduct" duration-ms="20769" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="orderAProduct()[pri:0, instance:com.test.TestRunner@53ce1329]" started-at="2023-06-18T10:59:31 IST" name="orderAProduct" finished-at="2023-06-18T11:00:47 IST" depends-on-methods="com.test.TestRunner.SelectProduct" duration-ms="76365" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span class=" css-1l4d0ex e171rb9k3">...</span> is not clickable at point (249, 674). Other element would receive the click: <li class="css-18fuhjc edkwwn3">...</li>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='cart-count']"}
   (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUTHUKUMAR', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'MUTHUKUMAR', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rmuth\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 956ea8c11e06169f269524ff9462b9bf]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rmuth\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ddb1edcf5757de121f3a81304d84297
+*** Element info: {Using=xpath, value=//span[@class='cart-count']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class=" css-1l4d0ex e171rb9k3">...</span> is not clickable at point (249, 674). Other element would receive the click: <li class="css-18fuhjc edkwwn3">...</li>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='cart-count']"}
   (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUTHUKUMAR', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'MUTHUKUMAR', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rmuth\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 956ea8c11e06169f269524ff9462b9bf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rmuth\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ddb1edcf5757de121f3a81304d84297
+*** Element info: {Using=xpath, value=//span[@class='cart-count']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
 at com.base.TestBase.clickOnElement(TestBase.java:116)
-at com.test.TestRunner.orderAProduct(TestRunner.java:47)
+at com.test.TestRunner.orderAProduct(TestRunner.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -67,7 +69,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -85,21 +87,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderAProduct -->
-        <test-method signature="login()[pri:0, instance:com.test.TestRunner@2ed2d9cb]" started-at="2023-06-17T14:01:26 IST" name="login" finished-at="2023-06-17T14:01:26 IST" depends-on-methods="com.test.TestRunner.orderAProduct" duration-ms="0" status="SKIP">
+        <test-method signature="login()[pri:0, instance:com.test.TestRunner@53ce1329]" started-at="2023-06-18T11:00:47 IST" name="login" finished-at="2023-06-18T11:00:47 IST" depends-on-methods="com.test.TestRunner.orderAProduct" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestRunner.login()[pri:0, instance:com.test.TestRunner@2ed2d9cb] depends on not successfully finished methods]]>
+              <![CDATA[Method TestRunner.login()[pri:0, instance:com.test.TestRunner@53ce1329] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestRunner.login()[pri:0, instance:com.test.TestRunner@2ed2d9cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TestRunner.login()[pri:0, instance:com.test.TestRunner@53ce1329] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -121,17 +123,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="cancelOrder()[pri:0, instance:com.test.TestRunner@2ed2d9cb]" started-at="2023-06-17T14:01:26 IST" name="cancelOrder" finished-at="2023-06-17T14:01:26 IST" depends-on-methods="com.test.TestRunner.login" duration-ms="0" status="SKIP">
+        <test-method signature="cancelOrder()[pri:0, instance:com.test.TestRunner@53ce1329]" started-at="2023-06-18T11:00:47 IST" name="cancelOrder" finished-at="2023-06-18T11:00:47 IST" depends-on-methods="com.test.TestRunner.login" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestRunner.cancelOrder()[pri:0, instance:com.test.TestRunner@2ed2d9cb] depends on not successfully finished methods]]>
+              <![CDATA[Method TestRunner.cancelOrder()[pri:0, instance:com.test.TestRunner@53ce1329] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestRunner.cancelOrder()[pri:0, instance:com.test.TestRunner@2ed2d9cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TestRunner.cancelOrder()[pri:0, instance:com.test.TestRunner@53ce1329] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -154,6 +156,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- cancelOrder -->
       </class> <!-- com.test.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

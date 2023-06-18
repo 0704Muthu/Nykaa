@@ -35,15 +35,15 @@ public class TestRunner extends TestBase{
 	
 	
 	@Test(dependsOnMethods = "SelectProduct")
-	private void orderAProduct() {
+	private void orderAProduct() throws InterruptedException {
 		String third="Nykaa Naturals Face Wash: Buy Nykaa Naturals Face Wash Online at Best Price in India | Nykaa";
 		windowHandling(third);
 		clickOnElement(pom.getBop().getAddToBag());
 		clickOnElement(pom.getBop().getOrder());
 		frame(0);
-		clickOnElement(pom.getBop().getCart());
+	//	clickOnElement(pom.getBop().getCart());
 	//	clickOnElement(pom.getBop().getQty());
-		
+		Thread.sleep(5000);
 		clickOnElement(pom.getBop().getProceed());
 
 
